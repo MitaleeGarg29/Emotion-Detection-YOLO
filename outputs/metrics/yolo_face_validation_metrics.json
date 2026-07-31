@@ -1,0 +1,8 @@
+{
+    "validation_images": 2576,
+    "precision_percent": 83.5,
+    "recall_percent": 54.92,
+    "f1_score_percent": 66.26,
+    "map50_percent": 61.11,
+    "map50_95_percent": 31.51
+}

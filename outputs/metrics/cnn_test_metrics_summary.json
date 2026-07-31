@@ -1,0 +1,9 @@
+{
+    "test_accuracy_percent": 62.78,
+    "macro_precision_percent": 58.0,
+    "macro_recall_percent": 63.95,
+    "macro_f1_percent": 59.66,
+    "weighted_precision_percent": 63.74,
+    "weighted_recall_percent": 62.78,
+    "weighted_f1_percent": 62.93
+}
