@@ -1,4 +1,3 @@
-
 import streamlit as st
 import tempfile
 import os
@@ -10,9 +9,9 @@ st.set_page_config(page_title="Emotion Detection", layout="centered")
 st.title("🎭 Video Emotion Detection")
 st.write("Upload a short video. YOLOv8 detects faces, a custom CNN classifies each face's emotion.")
 
-PROJECT_ROOT = Path(__file__).resolve().parent.parent
-YOLO_WEIGHTS = str(PROJECT_ROOT / "models/face_detector/yolov8n_face/weights/best.pt")
-CNN_WEIGHTS = str(PROJECT_ROOT / "models/emotion_classifier/best_emotion_model.pt")
+APP_ROOT = Path(__file__).resolve().parent
+YOLO_WEIGHTS = str(APP_ROOT / "models/face_detector/best.pt")
+CNN_WEIGHTS = str(APP_ROOT / "models/emotion_classifier/best_emotion_model.pt")
 
 @st.cache_resource
 def load_processor():
